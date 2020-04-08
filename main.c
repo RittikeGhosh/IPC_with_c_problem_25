@@ -22,10 +22,12 @@ int main()
 {
 	system("clear");
 	printf("#########################################################\n");
+	printf("#                                                       #\n");
 	printf("#                         WELCOME                       #\n");
 	printf("#      This Program illustrates the working of IPC      #\n");
 	printf("#        The program will transform letter cases        #\n");
 	printf("#            e.g Hello World! --> hELLO wORLD!          #\n");
+	printf("#                                                       #\n");
 	printf("#########################################################\n\n\n");
 
 	char p1_buffer[MAX_LENGTH];  // for input and pass to the second program
@@ -73,7 +75,8 @@ int main()
 		printf("---------------------------------------------------\n");
 
 		// final output...
-		printf("\nFinally, (...)\n\n\t(%s) ---> (%s)\n\n", p1_buffer, outputBuffer);
+		sleep(1);
+		printf("\nFinally, (...)\n=>\t| %s ---> %s |\n\n", p1_buffer, outputBuffer);
 	}
 	else
 	{
